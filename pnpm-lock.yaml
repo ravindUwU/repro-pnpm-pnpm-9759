@@ -7,7 +7,7 @@ settings:
 catalogs:
   default:
     lodash-es:
-      specifier: ^4.17.21
+      specifier: 4.17.21
       version: 4.17.21
 
 importers:
@@ -20,7 +20,11 @@ importers:
         specifier: 'catalog:'
         version: 4.17.21
 
-  packages/b: {}
+  packages/b:
+    dependencies:
+      lodash-es:
+        specifier: 'catalog:'
+        version: 4.17.21
 
 packages:
 

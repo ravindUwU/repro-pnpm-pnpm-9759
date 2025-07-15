@@ -1,4 +1,6 @@
 {
 	"name": "b",
-	"dependencies": {}
+	"dependencies": {
+		"lodash-es": "catalog:"
+	}
 }
