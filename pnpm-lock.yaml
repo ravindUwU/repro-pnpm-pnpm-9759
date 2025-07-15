@@ -26,6 +26,12 @@ importers:
         specifier: 'catalog:'
         version: 4.17.21
 
+  packages/c:
+    dependencies:
+      lodash-es:
+        specifier: 'catalog:'
+        version: 4.17.21
+
 packages:
 
   lodash-es@4.17.21:
