@@ -4,10 +4,29 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    lodash-es:
+      specifier: ^4.17.21
+      version: 4.17.21
+
 importers:
 
   .: {}
 
-  packages/a: {}
+  packages/a:
+    dependencies:
+      lodash-es:
+        specifier: 'catalog:'
+        version: 4.17.21
 
   packages/b: {}
+
+packages:
+
+  lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+
+snapshots:
+
+  lodash-es@4.17.21: {}
